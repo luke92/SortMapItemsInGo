@@ -22,6 +22,12 @@ func main() {
 		return discordUsers[i].VotingPhases["phase_1"] > discordUsers[j].VotingPhases["phase_1"]
 	})
 
+	max := 2
+	lastDiscordUsers := []DiscordUser{}
+	for i := 0; i < max; i++ {
+		lastDiscordUsers = append(lastDiscordUsers, discordUsers[i])
+	}
+	fmt.Println(lastDiscordUsers)
 	fmt.Println(discordUsers)
 }
 
